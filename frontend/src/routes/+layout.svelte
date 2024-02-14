@@ -1,9 +1,7 @@
 <script lang="ts">
 	import '../app.pcss';
-	import { AppShell, AppBar, autoModeWatcher } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 </script>
-
-<svelte:head>{@html '<script>(' + autoModeWatcher.toString() + ')();</script>'}</svelte:head>
 
 <!-- App Shell -->
 <AppShell>
