@@ -1,2 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div
+	class="dark:bg-dim-900 sticky top-0 flex items-center justify-between border-b border-l border-r border-gray-200 bg-white px-4 py-3 dark:border-gray-700"
+>
+	<h2 class="font-sm font-bold text-gray-800 dark:text-gray-100">For you</h2>
+</div>

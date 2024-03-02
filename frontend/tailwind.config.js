@@ -4,7 +4,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
-  safelist: ["dark"],
+	safelist: ["dark"],
 	theme: {
 		container: {
 			center: true,
@@ -56,7 +56,15 @@ const config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
-			}
+			},
+			width: {
+				68: "68px",
+				88: "88px",
+				275: "275px",
+				290: "290px",
+				350: "350px",
+				600: "600px",
+			  },
 		}
 	},
 };
