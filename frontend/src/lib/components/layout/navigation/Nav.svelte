@@ -1,5 +1,6 @@
 <script lang="ts">
 	import NavItem from '$lib/components/layout/navigation/NavItem.svelte';
+	import NavPost from './NavPost.svelte';
 	import { navigationItems } from './data/navigation-items';
 </script>
 
@@ -7,4 +8,6 @@
 	{#each navigationItems as navItem}
 		<NavItem {navItem} />
 	{/each}
+
+	<NavPost />
 </nav>
