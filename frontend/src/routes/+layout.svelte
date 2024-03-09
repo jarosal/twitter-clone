@@ -14,5 +14,6 @@
 	<svelte:fragment slot="sidebarLeft">
 		<Nav />
 	</svelte:fragment>
+  
 	<slot />
 </AppLayout>
