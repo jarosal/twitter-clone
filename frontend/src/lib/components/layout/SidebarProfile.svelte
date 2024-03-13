@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Dots from 'virtual:icons/ri/more-line';
 	import * as Avatar from "$lib/components/ui/avatar";
+	import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
+
+	let openDropdown = false;
 </script>
 
 <!--
@@ -8,9 +11,20 @@
 	- context menu
 -->
 
+
+<DropdownMenu.Root bind:open={openDropdown}>
+	<DropdownMenu.Trigger />
+  <DropdownMenu.Content>
+    <DropdownMenu.Group>
+      <DropdownMenu.Item>Log out @LoremIpsum</DropdownMenu.Item>
+    </DropdownMenu.Group>
+  </DropdownMenu.Content>
+</DropdownMenu.Root>
+
 <div class="relative">
 	<button
 		class="group hover:bg-accent flex w-full items-center justify-between rounded-full p-3 transition duration-300 focus-visible:ring-2 focus-visible:ring-accent-foreground outline-none"
+		on:click={() => (openDropdown = true)}
 	>
 		<div class="flex gap-3 truncate">
 			<Avatar.Root>
