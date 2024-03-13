@@ -41,7 +41,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bits-ui": "^0.19.5",
+		"bits-ui": "^0.19.6",
 		"clsx": "^2.1.0",
 		"tailwind-merge": "^2.2.1",
 		"tailwind-variants": "^0.2.0"
