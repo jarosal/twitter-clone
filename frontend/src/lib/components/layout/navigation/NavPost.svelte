@@ -9,8 +9,8 @@
 
 <Dialog.Root>
 	<Dialog.Trigger
-		class="bg-accent-blue p-3 rounded-full text-lg font-bold text-white outline-none transition
-  hover:brightness-90 active:brightness-75 xl:w-11/12 mt-1"
+		class="mt-1 rounded-full bg-accent-blue p-3 text-lg font-bold text-white outline-none
+  transition hover:brightness-90 active:brightness-75 xl:w-11/12"
 	>
 		<svg class="block h-6 w-6 xl:hidden" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
 			<g>
@@ -24,9 +24,7 @@
 	<Dialog.Content>
 		<Dialog.Header>
 			<Dialog.Title>Post</Dialog.Title>
-			<Dialog.Description>
-        Post
-			</Dialog.Description>
+			<Dialog.Description>Post</Dialog.Description>
 		</Dialog.Header>
 	</Dialog.Content>
 </Dialog.Root>
