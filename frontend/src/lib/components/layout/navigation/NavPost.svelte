@@ -4,13 +4,12 @@
 
 <!-- TODO:
   - active/focus styling
-  - modal
-
+  - modal UI 
 -->
 
 <Dialog.Root>
 	<Dialog.Trigger
-		class="rounded-full bg-accent-blue text-lg font-bold text-white outline-none transition
+		class="bg-accent-blue rounded-full text-lg font-bold text-white outline-none transition
   hover:brightness-90 active:brightness-75 xl:w-11/12"
 	>
 		<svg class="block h-6 w-6 xl:hidden" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
@@ -25,7 +24,9 @@
 	<Dialog.Content>
 		<Dialog.Header>
 			<Dialog.Title>Post</Dialog.Title>
-			<Dialog.Description>Post</Dialog.Description>
+			<Dialog.Description>
+        Post
+			</Dialog.Description>
 		</Dialog.Header>
 	</Dialog.Content>
 </Dialog.Root>
