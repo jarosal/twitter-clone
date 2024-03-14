@@ -2,8 +2,6 @@
 	import Dots from 'virtual:icons/ri/more-line';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
-
-	let openDropdown = false;
 </script>
 
 <!--
