@@ -3,7 +3,7 @@
 	<!-- left sidebar -->
 	<header
 		id="left-sidebar"
-		class="xs:w-20 flex w-0 shrink-0 transition-opacity duration-200 md:w-24 lg:max-w-none xl:-mr-4 xl:w-full xl:max-w-xs xl:justify-end"
+		class="xs:w-20 flex md:w-24 lg:max-w-none xl:-mr-4 xl:w-full xl:max-w-xs xl:justify-end"
 	>
 		<div
 			class="border-bg-accent xs:top-0 xs:h-full xs:w-auto xs:border-0 xs:bg-transparent xs:pt-2 bottom-0 z-10 flex w-full flex-col justify-between border-t px-2 py-3 md:px-4 xl:w-72"
