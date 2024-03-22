@@ -2,11 +2,6 @@
 	import * as Dialog from '$lib/components/ui/dialog';
 </script>
 
-<!-- TODO:
-  - active/focus styling
-  - modal UI 
--->
-
 <Dialog.Root>
 	<Dialog.Trigger
 		class="mt-1 rounded-full bg-accent-blue p-3 text-lg font-bold text-white outline-none

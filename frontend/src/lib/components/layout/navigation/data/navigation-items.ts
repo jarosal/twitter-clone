@@ -19,35 +19,30 @@ export const navigationItems: NavigationItem[] = [
 	{
 		text: 'Home',
 		href: '/',
-		more: false,
 		activeIcon: HomeActiveIcon,
 		regularIcon: HomeRegularIcon
 	},
 	{
 		text: 'Explore',
 		href: '/explore',
-		more: false,
 		activeIcon: ExploreActiveIcon,
 		regularIcon: ExploreRegularIcon
 	},
 	{
 		text: 'Notifications',
 		href: '/notifications',
-		more: false,
 		activeIcon: NotificationsActiveIcon,
 		regularIcon: NotificationsRegularIcon
 	},
 	{
 		text: 'Profile',
 		href: '/profile',
-		more: false,
 		activeIcon: ProfileActiveIcon,
 		regularIcon: ProfileRegularIcon
 	},
 	{
 		text: 'Settings',
 		href: '/settings',
-		more: false,
 		activeIcon: SettingsActiveIcon,
 		regularIcon: SettingsRegularIcon
 	}
