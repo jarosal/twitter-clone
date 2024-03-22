@@ -4,12 +4,6 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 </script>
 
-<!--
-	- extract props
-	- context menu
-	- click animation
--->
-
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger>
 		<div class="relative">
