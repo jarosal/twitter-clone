@@ -1,7 +1,7 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var frontend = builder
-  .AddNpmApp("twitter-clone-frontend", "../../../frontend", "dev")
+  .AddNpmApp("twitter-clone-frontend", "../../../frontend", "aspire")
   .WithEndpoint(containerPort: 3000, scheme: "http", env: "PORT")
   .PublishAsDockerFile();
 
