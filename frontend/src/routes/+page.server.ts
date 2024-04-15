@@ -1,7 +1,7 @@
 import { env } from '$env/dynamic/private';
 
 export async function load( event) {
-  const url = env['services__hello-world__0'] ?? '';
+  const url = env.HELLO_WORLD_API ?? '';
 
   console.log(url);
 

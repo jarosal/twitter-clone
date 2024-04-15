@@ -6,11 +6,12 @@ var frontend = builder
   .PublishAsDockerFile();
 
 var helloWorld = builder
-  .AddProject<Projects.TwitterClone_HelloWorld>("hello-world")
-  .WithReference(frontend);
+  .AddProject<Projects.TwitterClone_HelloWorld>("hello-world");
+
+var helloWorldEndpoint = helloWorld.GetEndpoint("http");
 
 frontend
-  .WithReference(helloWorld);
+  .WithEnvironment("HELLO_WORLD_API", helloWorldEndpoint);
 
 builder
   .Build()
