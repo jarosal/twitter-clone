@@ -5,13 +5,11 @@ var frontend = builder
   .WithEndpoint(containerPort: 3000, scheme: "http", env: "PORT")
   .PublishAsDockerFile();
 
-var helloWorld = builder
+var helloWorldApi = builder
   .AddProject<Projects.TwitterClone_HelloWorld>("hello-world");
 
-var helloWorldEndpoint = helloWorld.GetEndpoint("http");
-
 frontend
-  .WithEnvironment("HELLO_WORLD_API", helloWorldEndpoint);
+  .WithEnvironment("HELLO_WORLD_API", helloWorldApi.GetEndpoint("http"));
 
 builder
   .Build()
