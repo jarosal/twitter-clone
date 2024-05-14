@@ -12,7 +12,6 @@
 	import SignIn from 'clerk-sveltekit/client/SignIn.svelte'
 </script>
 
-<!-- This is probably not secure but auth is not the objective of this project right now -->
 <SignedIn let:user>
 	<AppLayout>
 		<svelte:fragment slot="headerLeft">
