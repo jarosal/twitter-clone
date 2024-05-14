@@ -2,6 +2,14 @@
 	import Dots from 'virtual:icons/ri/more-line';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
+	import SignOutButton from 'clerk-sveltekit/client/SignOutButton.svelte';
+	import { goto } from '$app/navigation';
+
+	import type { UserResource } from '@clerk/types';
+
+	export let user: UserResource | null | undefined;
+
+	console.log(user);
 </script>
 
 <DropdownMenu.Root>
@@ -12,15 +20,15 @@
 			>
 				<div class="flex gap-3 truncate">
 					<Avatar.Root>
-						<Avatar.Image alt="Lorem Ipsum" />
+						<Avatar.Image alt="Lorem Ipsum" src={user?.imageUrl} />
 						<Avatar.Fallback class="transition duration-300 group-hover:bg-white"
 							>LI</Avatar.Fallback
 						>
 					</Avatar.Root>
 
 					<div class="hidden truncate text-start leading-5 xl:block">
-						<h1 class="text-sm font-bold text-gray-800 dark:text-white">Lorem ipsum</h1>
-						<p class="text-sm text-gray-400">@LoremIpsum</p>
+						<h1 class="text-sm font-bold text-gray-800 dark:text-white">{user?.fullName}</h1>
+						<p class="text-sm text-gray-400">@{user?.username}</p>
 					</div>
 				</div>
 				<Dots class="hidden h-5 w-5 xl:block" />
@@ -29,7 +37,9 @@
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content sameWidth>
 		<DropdownMenu.Group>
-			<DropdownMenu.Item class="text-m font-bold">Log out @LoremIpsum</DropdownMenu.Item>
+			<DropdownMenu.Item class="text-m font-bold">
+				<SignOutButton signOutCallback={() => goto('/')}/>
+			</DropdownMenu.Item>
 		</DropdownMenu.Group>
 	</DropdownMenu.Content>
 </DropdownMenu.Root>

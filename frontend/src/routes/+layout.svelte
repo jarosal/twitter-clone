@@ -5,20 +5,37 @@
 	import SidebarLogo from '$lib/components/layout/SidebarLogo.svelte';
 	import Nav from '$lib/components/layout/navigation/Nav.svelte';
 	import SidebarProfile from '$lib/components/layout/SidebarProfile.svelte';
+
+	import SignedIn from 'clerk-sveltekit/client/SignedIn.svelte'
+	import SignedOut from 'clerk-sveltekit/client/SignedOut.svelte'
+
+	import SignIn from 'clerk-sveltekit/client/SignIn.svelte'
 </script>
 
-<AppLayout>
-	<svelte:fragment slot="headerLeft">
-		<SidebarLogo />
-	</svelte:fragment>
+<SignedIn let:user>
+	<AppLayout>
+		<svelte:fragment slot="headerLeft">
+			<SidebarLogo />
+		</svelte:fragment>
+	
+		<svelte:fragment slot="sidebarLeft">
+			<Nav />
+		</svelte:fragment>
+	
+		<svelte:fragment slot="footerLeft">
+			<SidebarProfile {user} />
+		</svelte:fragment>
+	
+		<slot />
+	</AppLayout>
+</SignedIn>
 
-	<svelte:fragment slot="sidebarLeft">
-		<Nav />
-	</svelte:fragment>
+<SignedOut>
+	<div class="flex h-screen justify-center">
+		<div class="content-center">
+			<SignIn redirectUrl="/" />
+		</div>
+	</div>
+</SignedOut>
 
-	<svelte:fragment slot="footerLeft">
-		<SidebarProfile />
-	</svelte:fragment>
 
-	<slot />
-</AppLayout>
