@@ -11,10 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.5.24201.12" />
 	  <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="HotChocolate.Fusion.Aspire" Version="14.0.0-p.101" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TwitterClone.HelloWorld\TwitterClone.HelloWorld.csproj" />
+    <ProjectReference Include="..\TwitterClone.GraphQLGateway\TwitterClone.GraphQLGateway.csproj" />
   </ItemGroup>
 
 </Project>

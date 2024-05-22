@@ -13,5 +13,10 @@ frontend
   .WithEnvironment("HELLO_WORLD_API", helloWorldApi.GetEndpoint("http"));
 
 builder
+  .AddFusionGateway<Projects.TwitterClone_GraphQLGateway>("graphql-gateway")
+  .WithSubgraph(helloWorldApi);
+
+builder
   .Build()
+  .Compose()
   .Run();
