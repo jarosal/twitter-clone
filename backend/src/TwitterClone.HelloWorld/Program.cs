@@ -1,16 +1,17 @@
+using TwitterClone.HelloWorld.Types;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
 builder.Services
-  .AddGraphQLServer();
+  .AddGraphQLServer()
+  .AddTypes();
 
 var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
 
 app.MapDefaultEndpoints();
 
 app.MapGraphQL();
 
-app.Run();
+app.RunWithGraphQLCommands(args);
