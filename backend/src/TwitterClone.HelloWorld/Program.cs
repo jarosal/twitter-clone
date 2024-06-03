@@ -6,7 +6,7 @@ builder.AddServiceDefaults();
 
 builder.Services
   .AddGraphQLServer()
-  .AddTypes();
+  .AddQueryType<Query>();
 
 var app = builder.Build();
 
