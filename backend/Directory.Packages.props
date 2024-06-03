@@ -4,7 +4,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <AspireVersion>8.0.0-preview.5.24201.12</AspireVersion>
+    <AspireVersion>8.0.1</AspireVersion>
     <HotChocolateVersion>14.0.0-p.101</HotChocolateVersion>
   </PropertyGroup>
 
