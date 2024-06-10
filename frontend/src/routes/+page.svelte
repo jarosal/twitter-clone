@@ -1,5 +1,8 @@
 <script lang="ts">
-	export let data;
+	import type { PageData } from './$houdini';
+	export let data: PageData;
+
+	$: ({ Test } = data)
 </script>
 
 <div
@@ -8,4 +11,4 @@
 	<h2 class="font-sm font-bold text-gray-800 dark:text-gray-100">For you</h2>
 </div>
 
-{data.data}
+{$Test.data?.helloWorld.helloWorld}
