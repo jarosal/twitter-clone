@@ -1,0 +1,1 @@
+{"subgraph":"hello-world","http":{"baseAddress":"http://localhost:5136/graphql","clientName":"http"}}

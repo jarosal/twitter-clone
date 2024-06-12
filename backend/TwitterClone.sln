@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterClone.AppHost", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterClone.ServiceDefaults", "src\TwitterClone.ServiceDefaults\TwitterClone.ServiceDefaults.csproj", "{E4ADCB31-C872-4120-9016-81C2BA042D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClone.HelloWorld", "src\TwitterClone.HelloWorld\TwitterClone.HelloWorld.csproj", "{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterClone.HelloWorld", "src\TwitterClone.HelloWorld\TwitterClone.HelloWorld.csproj", "{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterClone.GraphQLGateway", "src\TwitterClone.GraphQLGateway\TwitterClone.GraphQLGateway.csproj", "{E16A2349-D8C8-4896-87C7-BF7B9057604F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BEDD9B0-3197-424D-95D2-8A5D6D71664B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEDD9B0-3197-424D-95D2-8A5D6D71664B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEDD9B0-3197-424D-95D2-8A5D6D71664B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEDD9B0-3197-424D-95D2-8A5D6D71664B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E4ADCB31-C872-4120-9016-81C2BA042D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E4ADCB31-C872-4120-9016-81C2BA042D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4ADCB31-C872-4120-9016-81C2BA042D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,13 +29,13 @@ Global
 		{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16A2349-D8C8-4896-87C7-BF7B9057604F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16A2349-D8C8-4896-87C7-BF7B9057604F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16A2349-D8C8-4896-87C7-BF7B9057604F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16A2349-D8C8-4896-87C7-BF7B9057604F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{E4ADCB31-C872-4120-9016-81C2BA042D82} = {9B497813-9D72-429E-A56B-37E402B7D7A5}
-		{E2E09004-7A57-4A72-8DB1-7BE7C6FA2447} = {091EA416-6473-475C-87CD-DEA3E62BE8CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98BC2712-FEA1-4B73-A606-5265E810DC43}
