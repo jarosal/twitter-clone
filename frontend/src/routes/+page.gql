@@ -1,4 +1,4 @@
-query Test{
+query Test {
   helloWorld(name: "World") {
     helloWorld
   }
