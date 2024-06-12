@@ -10,8 +10,6 @@ var graphQLGateway = builder
 builder
   .AddNpmApp("twitter-clone-frontend", "../../../frontend", "aspire")
   .WithHttpEndpoint(env: "PORT")
-  .WithExternalHttpEndpoints()
-  .PublishAsDockerFile()
   .WithEnvironment("PUBLIC_GRAPHQL_GATEWAY", "http://localhost:5098/graphql");
 
 builder
