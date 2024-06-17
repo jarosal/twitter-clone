@@ -26,6 +26,8 @@
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-svelte": "^2.35.1",
+        "houdini": "^1.2.47",
+        "houdini-svelte": "^1.2.47",
         "postcss": "^8.4.32",
         "postcss-load-config": "^5.0.2",
         "prettier": "^3.1.1",
@@ -39,19 +41,16 @@
         "typescript": "^5.0.0",
         "unplugin-icons": "^0.18.5",
         "vite": "^5.0.3",
-        "vitest": "^1.2.0",
-        "houdini": "^1.2.47",
-        "houdini-svelte": "^1.2.47"
+        "vitest": "^1.2.0"
     },
     "type": "module",
     "dependencies": {
         "@opentelemetry/api": "^1.9.0",
         "@opentelemetry/auto-instrumentations-node": "^0.47.1",
-        "@opentelemetry/sdk-metrics": "^1.25.0",
+        "@opentelemetry/exporter-trace-otlp-grpc": "^0.52.0",
         "@opentelemetry/sdk-node": "^0.52.0",
-        "@opentelemetry/sdk-trace-node": "^1.25.0",
         "bits-ui": "^0.19.6",
-		"clerk-sveltekit": "^0.4.1",
+        "clerk-sveltekit": "^0.4.1",
         "clsx": "^2.1.0",
         "tailwind-merge": "^2.2.1",
         "tailwind-variants": "^0.2.0"
